@@ -1,0 +1,34 @@
+{
+    "restaurants": [
+      {
+        "id": 2,
+        "name": "Restaurantpoint",
+        "menus": [
+          {
+            "id": 2,
+            "name": "Restaurantpoint Menu",
+            "menu_items": [
+              {
+                "id": 4,
+                "name": "Savory Filet Mignon",
+                "description": "Tender filet mignon seasoned and seared to perfection",
+                "price": 34.99
+              },
+              {
+                "id": 5,
+                "name": "Exquisite Seafood Medley",
+                "description": "An assortment of the finest seafood, featuring lobster, crab, and clams",
+                "price": 29.99
+              },
+              {
+                "id": 6,
+                "name": "Mouthwatering Stuffed Peppers",
+                "description": "Bell peppers stuffed with a delightful mix of cheese and herbs",
+                "price": 22.99
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
