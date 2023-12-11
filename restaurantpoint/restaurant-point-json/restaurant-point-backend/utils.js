@@ -2,18 +2,18 @@ const jsonServer = require("json-server");
 
 const router = jsonServer.router("db.json");
 
-function readLastUsedRestaurantsId() {
+function readLastUsedRestaurantId() {
     try {
         const data = router.db.get("lastUsedId").value();
-        return data.restaurantsId;
+        return data.restaurantId;
     } catch (error) {
         return 1;
     }
 }
 
-function writeLastUsedRestaurantsId(value) {
+function writeLastUsedRestaurantId(value) {
     const lastUsedId = router.db.get("lastUsedId").value();
-    lastUsedId.RestaurantsId = value;
+    lastUsedId.restaurantId = value;
     router.db.set("lastUsedId", lastUsedId).write();
 }
 
@@ -48,8 +48,8 @@ function writeLastUsedMenuItemsId(value) {
 }
 
 module.exports = {
-    readLastUsedRestaurantsId,
-    writeLastUsedRestaurantsId,
+    readLastUsedRestaurantId,
+    writeLastUsedRestaurantId,
     readLastUsedMenusID,
     writeLastUsedMenusId,
     readLastUsedMenuItemsID,

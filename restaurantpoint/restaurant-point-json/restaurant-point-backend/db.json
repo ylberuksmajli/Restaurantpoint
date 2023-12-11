@@ -1,7 +1,7 @@
 {
   "restaurants": [
     {
-      "id": 2,
+      "id": 1,
       "name": "Restaurantpoint",
       "menus": [
         {
@@ -29,6 +29,13 @@
           ]
         }
       ]
+    },
+    {
+      "id": 3,
+      "menus": []
     }
-  ]
+  ],
+  "lastUsedId": {
+    "restaurantId": 4
+  }
 }
